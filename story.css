@@ -57,7 +57,7 @@ li:Hover {
     z-index: 1;
   }
   /* Stilsetter teksten og setter teksten midt skjermen perspectiv 400px som lar meg jobbe med teksten i 3D*/
-  .star-wars {
+  .container {
     display: flex;
     justify-content: center;
     position: relative;
@@ -72,24 +72,24 @@ li:Hover {
     text-align: justify;
   }
   /* Setter position på teksten slik at jeg kan manipulere top delen samt animere */
-  .crawl {
+  .story {
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 60s linear;
+    animation: story 60s linear;
   }
   /*Stilsetting */
-  .crawl > .title {
+  .story > .title {
     font-size: 90%;
     text-align: center;
   }
   
-  .crawl > .title h1 {
+  .story > .title h1 {
     margin: 0 0 100px;
     text-transform: uppercase;
   }
   /* Animasjon Starte på bunnen og jobbe seg oppover, på 100% er teksten helt borte */
-  @keyframes crawl {
+  @keyframes story {
     0% {
       top: 0;
       transform: rotateX(20deg)  translateZ(0);
